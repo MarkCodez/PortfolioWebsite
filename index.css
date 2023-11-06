@@ -1,0 +1,32 @@
+.introContext {
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+}
+
+.myEducation {
+    background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 0%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+}
+
+.myExperience {
+    background-image: linear-gradient(-45deg, #93a5cf 50%, #e4efe9 20%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+}
