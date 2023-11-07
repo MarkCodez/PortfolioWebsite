@@ -1,3 +1,8 @@
+.navbar navbar-expand-sm navbar-light fixed-top
+{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
 .introContext {
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     height: 100vh;
@@ -9,46 +14,15 @@
     text-align: left;
 }
 
-/* #introImageContainer
-{
-    position: absolute;
-    top: 35%;
-    left: 10%;
-    width: 30%;
-    height: 30%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
-/* #introImage
-{
-    justify-content: center;
-	width: 300px;
-	height: 300px;
-	animation: fadeIn 4s;
-    padding: 30px 30px 30px 30px;  
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-} */
-
 #introImage {
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 700px;
     animation: fadeIn 4s;
-    padding: 30px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 20%;
-}
-
-#introImage img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 20%;
+    padding: 0px;
+    box-shadow: 10px 10px 100px white;
+    border-radius: 75%;
+    margin-left: 100px;
 }
 
 @keyframes fadeIn 
@@ -75,15 +49,38 @@
     padding: 20px;
 }
 
+#profileContent {
+    text-align: center;
+}
+
+#profileContent h2 {
+    margin-top: 20px; 
+}
+
+#profileContent p {
+    margin-top: 200px; 
+}
+
+
 .myEducation {
     background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
     padding: 20px;
-    text-align: left;
+    /* text-align: left; */
+}
+
+#contactContent h2
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#contactContent p {
+    margin-top: 200px; 
 }
 
 .myExperience {
@@ -91,8 +88,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
     padding: 20px;
-    text-align: left;
+    /* text-align: left; */
 }
