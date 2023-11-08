@@ -1,8 +1,3 @@
-.navbar navbar-expand-sm navbar-light fixed-top
-{
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-}
-
 .introContext {
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     height: 100vh;
@@ -18,7 +13,7 @@
     justify-content: center;
     width: 700px;
     height: 700px;
-    animation: fadeIn 4s;
+    animation: fadeIn 3s;
     padding: 0px;
     box-shadow: 10px 10px 100px white;
     border-radius: 75%;
@@ -42,25 +37,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: fadeIn 4s;
+    animation: fadeIn 3s;
 }
 
 #introContextText {
     padding: 20px;
 }
 
-#profileContent {
-    text-align: center;
-}
-
 #profileContent h2 {
-    margin-top: 20px; 
+    margin-top: 75px; 
+    text-align: center;
 }
 
 #profileContent p {
     margin-top: 200px; 
 }
-
 
 .myEducation {
     background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
@@ -69,13 +60,13 @@
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    padding: 20px;
+    /* padding: 20px; */
     /* text-align: left; */
 }
 
 #contactContent h2
 {
-    margin-top: 20px;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -90,6 +81,63 @@
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    padding: 20px;
+    /* padding: 20px; */
     /* text-align: left; */
 }
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    margin-left: -10px;
+  }
+
+  .timeline-item.left .timeline-content {
+    left: 70%;
+  }
+  
+  .timeline-item.right .timeline-content {
+    left: 20%;
+  }
+
+  .timeline-content {
+    position: relative;
+    left: 30px;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-description {
+    margin-bottom: 10px;
+  }
