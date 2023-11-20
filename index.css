@@ -33,10 +33,6 @@
   text-decoration: none;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
 .fa-linkedin {
   background: #0A66C2;
   border-radius: 10px;
@@ -61,6 +57,12 @@
   color: white;
 }
 
+.fa-map-marker-alt{
+  background: #FFA500;
+  border-radius: 10px;
+  color: #000;
+}
+
 .contactLinks {
   display: flex;
   justify-content: center; 
@@ -68,6 +70,34 @@
   margin-top: 500px;
   margin-left: 100px;
   gap: 90px;
+}
+
+.contactLinks a {
+  animation: iconShootUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.contactLinks a:nth-child(2) {
+  animation: iconShootUp 1s ease-out forwards;
+  animation-delay: .5s; 
+}
+
+.contactLinks a:nth-child(3) {
+  animation: iconShootUp 1s ease-out forwards;
+  animation-delay: 1s; 
+}
+
+.contactLinks a:nth-child(4) {
+  animation: iconShootUp 1s ease-out forwards;
+  animation-delay: 1.5s; 
+}
+
+@keyframes iconShootUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
