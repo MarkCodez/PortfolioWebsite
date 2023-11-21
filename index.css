@@ -26,10 +26,11 @@
 }
 
 .fa {
-  padding: 20px;
+  padding: 25px;
   font-size: 30px;
+  height: 50px;
   width: 50px;
-  text-align: center;
+  align-items: center;
   text-decoration: none;
 }
 
@@ -57,7 +58,7 @@
   color: white;
 }
 
-.fa-map-marker-alt{
+.fa-map-marker{
   background: #FFA500;
   border-radius: 10px;
   color: #000;
@@ -68,8 +69,8 @@
   justify-content: center; 
   position: absolute;
   margin-top: 500px;
-  margin-left: 100px;
-  gap: 90px;
+  margin-left: 85px;
+  gap: 70px;
 }
 
 .contactLinks a {
@@ -93,11 +94,46 @@
   animation-delay: 1.5s; 
 }
 
+.contactLinks a:nth-child(5) {
+  animation: iconShootUp 1s ease-out forwards;
+  animation-delay: 2s; 
+}
+
 @keyframes iconShootUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  background: #FFA500;
+  border-radius: 10px;
+  color: #000;
+} */
+
+.fa-map-marker .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.fa-map-marker:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 @keyframes fadeIn {
