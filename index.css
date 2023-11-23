@@ -1,6 +1,5 @@
-.container-fluid 
-{
-  font-weight:bold;
+.container-fluid {
+  font-weight: bold;
 }
 
 .introContext {
@@ -52,13 +51,13 @@
   color: white;
 }
 
-.fa-github{
+.fa-github {
   background: #000;
   border-radius: 10px;
   color: white;
 }
 
-.fa-map-marker{
+.fa-map-marker {
   background: #FFA500;
   border-radius: 10px;
   color: #000;
@@ -66,7 +65,7 @@
 
 .contactLinks {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   position: absolute;
   margin-top: 500px;
   margin-left: 85px;
@@ -81,22 +80,22 @@
 
 .contactLinks a:nth-child(2) {
   animation: iconShootUp 1s ease-out forwards;
-  animation-delay: .5s; 
+  animation-delay: .5s;
 }
 
 .contactLinks a:nth-child(3) {
   animation: iconShootUp 1s ease-out forwards;
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 
 .contactLinks a:nth-child(4) {
   animation: iconShootUp 1s ease-out forwards;
-  animation-delay: 1.5s; 
+  animation-delay: 1.5s;
 }
 
 .contactLinks a:nth-child(5) {
   animation: iconShootUp 1s ease-out forwards;
-  animation-delay: 2s; 
+  animation-delay: 2s;
 }
 
 @keyframes iconShootUp {
@@ -106,15 +105,8 @@
   }
 }
 
-/* .tooltip {
-  position: relative;
-  display: inline-block;
-  background: #FFA500;
-  border-radius: 10px;
-  color: #000;
-} */
-
-.fa-map-marker .tooltiptext {
+.fa-map-marker .tooltiptext,
+.fa-phone .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -131,10 +123,12 @@
   transition: opacity 0.3s;
 }
 
-.fa-map-marker:hover .tooltiptext {
+.fa-map-marker:hover .tooltiptext,
+.fa-phone:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
+
 
 @keyframes fadeIn {
   0% {
@@ -291,8 +285,9 @@
     0% {
       height: 0;
     }
+
     100% {
-      height: 50%; 
+      height: 50%;
     }
   }
 }
@@ -418,7 +413,6 @@
   margin-top: 200px;
 }
 
-.section2
-{
+.section2 {
   scroll-margin-top: 56px;
 }
