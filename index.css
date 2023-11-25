@@ -68,7 +68,7 @@
   justify-content: center;
   position: absolute;
   margin-top: 500px;
-  margin-left: 85px;
+  margin-left: 75px;
   gap: 70px;
 }
 
@@ -411,7 +411,7 @@
 
 /* section 3 - projects */
 .myProjects {
-  background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -430,6 +430,26 @@
 #firstAccordion {
   margin-top: 30px;
 }
+
+.accordion-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-img {
+  width: 100px;
+  height: 100px;
+  margin-left: 800px;
+}
+
 /* END section 3 - projects */
 
 /* section 4 - skills */
