@@ -179,7 +179,7 @@
   top: 35%;
   right: 10%;
   width: 30%;
-  height: 30%;
+  height: auto;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -407,14 +407,15 @@
     left: -15px;
   }
 }
+
 /* END section 2 - timeline */
 
 /* section 3 - projects */
 .myProjects {
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 #projectContent h2 {
@@ -422,33 +423,79 @@
   text-align: center;
 }
 
-.accordion-item {
-  margin-left: 12.5%;
-  width: 75%;
+.accordionL {
+  margin: 60px auto;
+  width: 600px;
 }
 
-#firstAccordion {
-  margin-top: 30px;
+.accordionL li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-.accordion-button {
+.accordionL li label {
   display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.accordion-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordionL .content{
+  color: #fff;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordionL input[type="radio"]:checked + label + .content{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordionL input[type="radio"]:checked + label::before{
+  content: '-';
 }
 
 .right-img {
   width: 100px;
   height: 100px;
-  margin-left: 800px;
+  border-radius: 10px;
 }
+
+#aImg1{
+  margin-left: 130px;
+}
+#aImg2{
+  margin-left: 20px;
+}
+#aImg3{
+  margin-left: 160px;
+}
+#aImg4{
+  margin-left: 250px;
+}
+
 
 /* END section 3 - projects */
 
@@ -468,6 +515,7 @@
 #skillsContent p {
   margin-top: 200px;
 }
+
 /* END section 4 - skills */
 
 .myContacts {

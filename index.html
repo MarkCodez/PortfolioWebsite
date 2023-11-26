@@ -93,6 +93,7 @@
 
 		<h2>Education + Experience</h2>
 
+		<!-- alternating time stamps right/left, goes from oldest to most recent  -->
 		<div class="timeline" id="historyContent">
 
 			<div class="containerT left-container">
@@ -194,64 +195,55 @@
 
 		<h2>Projects</h2>
 
-		<div class="accordion accordion-flush">
+		<ul class="accordionL">
 
-			<div class="accordion-item">
-				<h3 class="accordion-header" id="firstAccordion">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-						<p><b>1.</b> 'Gainz R Us' Android application <img src="android.png" class="right-img"></p>
-					</button>
-				</h3>
-				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+			<!-- first project  -->
+			<li>
+				<input type="radio" name="accordionL" id="firstAL" checked>
+				<label for="firstAL">'Gainz R Us' Android application <img src="android.png" class="right-img" id="aImg1"></label>
+				<div class="content">
+					<p>What is Lorem Ipsum?
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+					</p>
 				</div>
-			</div>
+			</li>
 
-			<div class="accordion-item">
-				<h3 class="accordion-header" id="secondAccordion">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-						<p><b>2.</b> 'AuctionWise' Concurrent Client-server model <img src="client-server.png" class="right-img"></p>
-					</button>
-				</h3>
-				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">
-						AuctionWise bidding service: In JupyterHub using C, I created a concurrent client-server model that allows multiple users to bid on items. 
+			<!-- second project  -->
+			<li>
+				<input type="radio" name="accordionL" id="secondAL">
+				<label for="secondAL">'AuctionWise' Concurrent Client-server model <img src="client-server.png" class="right-img" id="aImg2"></label>
+				<div class="content">
+					<p>AuctionWise bidding service: In JupyterHub using C, I created a concurrent client-server model that allows multiple users to bid on items. 
 						All users were validated with a username and given options to display items and bid. The bid option updates the prices of the items in real time.
 						<br> <iframe width="400" height="215" src="https://www.youtube.com/embed/Y7BG6DWyXMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					</p>
 				</div>
-			</div>
+			</li>
 
-			<div class="accordion-item">
-				<h3 class="accordion-header" id="thirdAccordion">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-						<p><b>3.</b> Brazilian Awareness Website <img src="brazil.png" class="right-img"></p>
-					</button>
-				</h3>
-				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">
-						As part of a collaborative effort to shed light on critical matters in Brazil, we used HTML, CSS, and JavaScript to craft a website focused on the topic of 
+			<!-- third project  -->
+			<li>
+				<input type="radio" name="accordionL" id="thirdAL">
+				<label for="thirdAL">Brazilian Awareness Website <img src="brazil.png" class="right-img" id="aImg3"></label>
+				<div class="content">
+					<p>As part of a collaborative effort to shed light on critical matters in Brazil, we used HTML, CSS, and JavaScript to craft a website focused on the topic of 
 						income inequality in Brazil. The site has a fixed nav bar, dynamic text and images, and other various immersive features that captivate our audience. 
 						<a href="https://income-disparity-in-brazil-green-team.markeskander7.repl.co/" target="_blank">Brazil website</a>
-					</div>
+					</p>
 				</div>
-			</div>
+			</li>
 
-			<div class="accordion-item">
-				<h3 class="accordion-header" id="fourthAccordion">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-						<p><b>4.</b> Hearts card game <img src="cards.png" class="right-img"></p>
-					</button>
-				</h3>
-				<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-					<div class="accordion-body">
-						I created an interactive game in VSCode using C++, allowing users to play against 3 computers. 
+			<!-- fourth project -->
+			<li>
+				<input type="radio" name="accordionL" id="fourthAL">
+				<label for="fourthAL">Hearts card game <img src="cards.png" class="right-img" id="aImg4"></label>
+				<div class="content">
+					<p>I created an interactive game in VSCode using C++, allowing users to play against 3 computers. 
 						The program implemented OOP principles, various specific functions, and diverse data structures.
-					</div>
+					</p>
 				</div>
-			</div>
+			</li>
 
-		</div>
+		</ul>
 
 	</section>
 
