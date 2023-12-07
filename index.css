@@ -509,7 +509,7 @@ input[type="radio"] {
 
 /* section 4 - skills */
 .mySkills {
-  background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
+  background-image: linear-gradient(45deg, #ffa95d 0%, #ffd470 100%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -522,6 +522,11 @@ input[type="radio"] {
 
 #skillsContent p {
   margin-top: 200px;
+}
+
+.mySkills .row{
+  text-align: center;
+  padding-top: 25px;
 }
 
 /* END section 4 - skills */
