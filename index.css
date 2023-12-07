@@ -1,9 +1,13 @@
+/* section 1 - navbar + home page */
 .container-fluid {
   font-weight: bold;
 }
 
 .introContext {
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  /* background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); */
+  background-image: url(laptop-hp.png);
+  background-size: cover;
+  background-position: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,10 +29,10 @@
 }
 
 .fa {
-  padding: 25px;
+  padding: 20px;
   font-size: 30px;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   align-items: center;
   text-decoration: none;
 }
@@ -68,7 +72,7 @@
   justify-content: center;
   position: absolute;
   margin-top: 500px;
-  margin-left: 85px;
+  margin-left: 110px;
   gap: 70px;
 }
 
@@ -135,25 +139,35 @@
   bottom: 20px;
   left: 50%;
   animation: fadeIn 7s;
+  color: white;
 }
 
 .fa-arrow-down {
   position: absolute;
   text-align: center;
-  bottom: 13px;
-  left: 51%;
+  bottom: 18px;
+  left: 50%;
+  padding-left: 50px;
   animation: fadeIn 10s, bounce 2s 7;
+  color: white;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+
   40% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
+
   60% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -172,7 +186,7 @@
   top: 35%;
   right: 10%;
   width: 30%;
-  height: 30%;
+  height: auto;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -195,7 +209,9 @@
 #profileContent p {
   margin-top: 200px;
 }
+/* END of section 1 - navbar + home page */
 
+/* section 2 - timeline */
 .myEducation {
   background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
   height: 100vh;
@@ -400,11 +416,14 @@
   }
 }
 
+/* END section 2 - timeline */
+
+/* section 3 - projects */
 .myProjects {
-  background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
-  height: 100vh;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 #projectContent h2 {
@@ -412,10 +431,83 @@
   text-align: center;
 }
 
-#projectContent p {
-  margin-top: 200px;
+.accordionL {
+  margin: 60px auto;
+  width: 600px;
 }
 
+.accordionL li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordionL li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordionL .content{
+  color: #fff;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordionL input[type="radio"]:checked + label + .content{
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordionL input[type="radio"]:checked + label::before{
+  content: '-';
+}
+
+.right-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+#aImg1{
+  margin-left: 130px;
+}
+#aImg2{
+  margin-left: 20px;
+}
+#aImg3{
+  margin-left: 160px;
+}
+#aImg4{
+  margin-left: 250px;
+}
+
+
+/* END section 3 - projects */
+
+/* section 4 - skills */
 .mySkills {
   background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
   height: 100vh;
@@ -431,6 +523,8 @@
 #skillsContent p {
   margin-top: 200px;
 }
+
+/* END section 4 - skills */
 
 .myContacts {
   background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);

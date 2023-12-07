@@ -5,7 +5,7 @@ function navigateToTimeline() {
     window.location.href = '#section2';
 }
 function navigateToProjects() {
-    window.location.href = '#section3';
+    window.location.href = '#projectContent';
 }
 function navigateToSkills() {
     window.location.href = '#section4';
