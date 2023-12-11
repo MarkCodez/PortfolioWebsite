@@ -510,7 +510,7 @@ input[type="radio"] {
 
 /* section 4 - skills */
 .mySkills {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -524,11 +524,10 @@ input[type="radio"] {
 .mySkills .row{
   text-align: center;
   padding-top: 25px;
-  /* font-family: 'Courier New', monospace; */
 }
 
-.col-4 h3 {
-  background-color: white;
+.mySkills h3 {
+  background-image: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
   padding: 10px;
   border-radius: 5px;
 }
@@ -543,19 +542,22 @@ input[type="radio"] {
 }
 
 .mySkills li{
-  padding: 15px;
+  padding: 10px;
 }
 
-.firstCol, .secondCol, .thirdCol{
-  /* background-color: #da9494; */
-  border-radius: 10px;
+.mySkills h4 {
+  background-color: #ffff99;
+  display: inline;
+  padding: 3px;
 }
 
-/* .skillItem{
-  text-align: left;
-  position: relative;
-  padding-left: 30px !important;
-} */
+.mySkills p {
+  transition: transform 0.3s ease;
+}
+
+.mySkills p:hover {
+  transform: scale(1.1);
+}
 
 /* END section 4 - skills */
 
