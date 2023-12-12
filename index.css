@@ -562,7 +562,8 @@ input[type="radio"] {
 /* END section 4 - skills */
 
 .myContacts {
-  background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
+  /* background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%); */
+  background-color: #000;
   display: flex;
   flex-direction: column;
 }
