@@ -1,5 +1,5 @@
 /* section 1 - navbar + home page */
-.container-fluid {
+.navbar .container-fluid {
   font-weight: bold;
 }
 
@@ -200,28 +200,17 @@
   font-size: 18px;
   padding: 20px;
 }
-
-#profileContent h2 {
-  margin-top: 75px;
-  text-align: center;
-}
-
-#profileContent p {
-  margin-top: 200px;
-}
 /* END of section 1 - navbar + home page */
 
 /* section 2 - timeline */
 .myEducation {
-  background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%);
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .timelineSection {
   scroll-margin-top: 56px;
-  /* background: black; */
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 
 .timelineSection h2 {
@@ -231,7 +220,7 @@
 }
 
 .timelineSection h3 {
-  background-color: #ffff99;
+  background-color: #ffca68;
   border-radius: 10px;
   display: inline;
   padding: 3px;
@@ -251,6 +240,10 @@
   width: 50%;
   animation: moveDown 1s linear forwards;
   opacity: 0;
+}
+
+.containerT p{
+  padding-top: 7px;
 }
 
 .containerT:nth-child(2) {
@@ -287,7 +280,6 @@
 
 .text-box {
   padding: 20px 30px;
-  background: #fff;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -303,16 +295,14 @@
 
 .containerT img {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  right: -20px;
-  top: 32px;
-  z-index: 10;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  right: -450px;
 }
 
 .right-container img {
-  left: -20px;
+  left: -450px;
 }
 
 .timeline::after {
@@ -320,11 +310,11 @@
   position: absolute;
   width: 6px;
   height: 100%;
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background-color: black;
+  border-radius: 100px;
   top: 0;
   left: 50%;
   margin-left: -3px;
-  z-index: -1;
   animation: moveLine 6s linear forwards;
 }
 
@@ -334,7 +324,7 @@
   }
 
   100% {
-    height: 77%;
+    height: 100%;
   }
 }
 
@@ -345,18 +335,13 @@
     }
 
     100% {
-      height: 50%;
+      height: 100%;
     }
   }
 }
 
 .text-box h2 {
   font-weight: 600;
-}
-
-.text-box small {
-  display: inline-block;
-  margin-bottom: 15px;
 }
 
 .left-container-arrow {
@@ -413,6 +398,9 @@
   .left-container img,
   .right-container img {
     left: 10px;
+    width: 40px;
+    height: 40px;
+    top: 32px;
   }
 
   .left-container-arrow,
@@ -422,7 +410,6 @@
     left: -15px;
   }
 }
-
 /* END section 2 - timeline */
 
 /* section 3 - projects */
