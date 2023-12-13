@@ -242,6 +242,11 @@
   opacity: 0;
 }
 
+.containerT:hover {
+  transform: scale(1.2);
+  transition: transform 3s ease;
+}
+
 .containerT p{
   padding-top: 7px;
 }
@@ -546,7 +551,7 @@ input[type="radio"] {
 }
 
 .mySkills p {
-  transition: transform 0.3s ease;
+  transition: transform 3s ease;
 }
 
 .mySkills p:hover {
