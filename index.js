@@ -1,15 +1,15 @@
 function navigateToHome() {
-    window.location.href = '#section1';
+    window.location.href = '#homeContent';
 }
 function navigateToTimeline() {
-    window.location.href = '#section2';
+    window.location.href = '#timelineContent';
 }
 function navigateToProjects() {
     window.location.href = '#projectContent';
 }
 function navigateToSkills() {
-    window.location.href = '#section4';
+    window.location.href = '#skillsContent';
 }
 function navigateToContacts() {
-    window.location.href = '#section5';
+    window.location.href = '#contactContent';
 }
