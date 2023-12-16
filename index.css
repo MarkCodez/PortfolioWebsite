@@ -518,6 +518,7 @@ input[type="radio"] {
 
 .mySkills h4 {
   background-color: #ffff99;
+  border-radius: 10px;
   display: inline;
   padding: 3px;
 }
