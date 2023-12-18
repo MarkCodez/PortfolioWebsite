@@ -383,7 +383,7 @@
 
 /* section 3 - projects */
 .myProjects {
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  background: #edf7f6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -395,6 +395,7 @@
 }
 
 .myProjects .card {
+  background-image: linear-gradient(120deg,  #e2f8ff 0%, #b0eaff 100%);
   height: 17rem;
   width: 38rem;
 }
@@ -441,13 +442,13 @@
 }
 
 .flip-card-front img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 350px;
+  height: 250px;
   object-fit: contain;
 }
 
 .shaking {
-  animation: shake 7s infinite ease-in-out;
+  animation: shake 5s infinite ease-in-out;
 }
 
 @keyframes shake {
@@ -579,6 +580,7 @@
 
 /* END section 4 - skills */
 
+/* section 5 - footer/contacts */
 .myContacts {
   /* background-image: linear-gradient(45deg, #93a5cf 50%, #e4efe9 20%); */
   background-color: #000;
@@ -594,3 +596,90 @@
 #contactContent p {
   margin-top: 200px;
 }
+/* END section 5 - footer/contacts */
+
+/* android.html */
+/* .introGainzRUs{
+  min-height: 100vh;
+  animation: fadeIn 3s;
+} */
+
+.introGainzRUs h3{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.introGainzRUs #android{
+  position: absolute;
+  height: 40vh;
+  width: 40vw;
+  margin-top: 10%;
+  margin-left: 0%;
+  z-index: -1;
+}
+
+.introGainzRUs #mainActivity{
+  position: absolute;
+  height: 80vh;
+  margin-top: 40%;
+  margin-left: 10%;
+}
+
+#bubble1 {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 650px;
+  height: 200px;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#bubble2 {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 650px;
+  height: 200px;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#introGainzRUsTextBG {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  width: 30%;
+  height: auto;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#introGainzRUsText {
+  font-size: 18px;
+  padding: 20px;
+}
+
+#gainzrusPPT
+{
+  position: absolute;
+  padding: 5px;
+  bottom: 10px;
+  right: 10px;
+}
+
+#gainzrusRepo{
+  position: absolute;
+  padding: 5px;
+  bottom: 10px;
+  right: 100px;
+}
+
+/* END android.html */
