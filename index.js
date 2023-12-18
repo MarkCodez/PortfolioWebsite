@@ -13,3 +13,6 @@ function navigateToSkills() {
 function navigateToContacts() {
     window.location.href = '#contactContent';
 }
+
+const card = document.querySelector('.flip-card-inner');
+card.classList.add('shaking');
