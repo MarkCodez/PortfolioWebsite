@@ -599,11 +599,6 @@
 /* END section 5 - footer/contacts */
 
 /* android.html */
-/* .introGainzRUs{
-  min-height: 100vh;
-  animation: fadeIn 3s;
-} */
-
 .introGainzRUs h3{
   position: absolute;
   margin-top: 10%;
@@ -633,16 +628,16 @@
   width: 650px;
   height: 200px;
   background-color: #0d6efd;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
   z-index: -1;
 }
 
 #bubble2 {
   position: absolute;
-  top: 10%;
-  right: 0%;
-  width: 650px;
-  height: 200px;
+  top: 0%;
+  right: 15%;
+  width: 200px;
+  height: 450px;
   background-color: #0d6efd;
   border-radius: 10px;
   z-index: -1;
@@ -652,9 +647,9 @@
   position: absolute;
   top: 40%;
   right: 10%;
-  width: 30%;
+  width: 25%;
   height: auto;
-  background-color: aqua;
+  background-color: rgb(173, 173, 173);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,24 +657,36 @@
   border-radius: 10px;
 }
 
-#introGainzRUsText {
-  font-size: 18px;
-  padding: 20px;
-}
-
 #gainzrusPPT
 {
   position: absolute;
   padding: 5px;
-  bottom: 10px;
-  right: 10px;
+  bottom: 20%;
+  right: 10%;
 }
 
-#gainzrusRepo{
+.projectLinks #gainzrusRepo{
   position: absolute;
-  padding: 5px;
-  bottom: 10px;
-  right: 100px;
+  padding: 10px;
+  bottom: 20%;
+  right: 20%;
+  background: #000;
+  border-radius: 10px;
+  color: white;
+}
+
+#mainActivityGainzRUsTextBG {
+  position: absolute;
+  top: 110%;
+  right: 10%;
+  width: 25%;
+  height: auto;
+  background-color: rgb(173, 173, 173);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
 }
 
 /* END android.html */
