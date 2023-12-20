@@ -599,10 +599,22 @@
 /* END section 5 - footer/contacts */
 
 /* android.html */
+.introGainzRUs{
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  min-height: 160vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: -1;
+  /* background: #fbfbfb; */
+  /* min-height: 100vh; */
+}
+
 .introGainzRUs h3{
   position: absolute;
   margin-top: 10%;
   margin-left: 10%;
+  z-index: 2;
 }
 
 .introGainzRUs #android{
@@ -611,7 +623,7 @@
   width: 40vw;
   margin-top: 10%;
   margin-left: 0%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .introGainzRUs #mainActivity{
@@ -621,18 +633,7 @@
   margin-left: 10%;
 }
 
-#bubble1 {
-  position: absolute;
-  top: 65%;
-  left: 0%;
-  width: 650px;
-  height: 200px;
-  background-color: #0d6efd;
-  border-radius: 0px 10px 10px 0px;
-  z-index: -1;
-}
-
-#bubble2 {
+#bubble1TopRight {
   position: absolute;
   top: 0%;
   right: 15%;
@@ -640,6 +641,28 @@
   height: 450px;
   background-color: #0d6efd;
   border-radius: 10px;
+  z-index: 1;
+}
+
+#bubble1Left {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 650px;
+  height: 200px;
+  background-color: #0d6efd;
+  border-radius: 0px 10px 10px 0px;
+  z-index: 1;
+}
+
+#bubble2Right {
+  position: absolute;
+  top: 120%;
+  right: 0%;
+  width: 650px;
+  height: 200px;
+  background-color: #0d6efd;
+  border-radius: 10px 0px 0px 10px;
   z-index: -1;
 }
 
@@ -655,6 +678,7 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  z-index: 2;
 }
 
 #gainzrusPPT
@@ -677,7 +701,7 @@
 
 #mainActivityGainzRUsTextBG {
   position: absolute;
-  top: 110%;
+  top: 115%;
   right: 10%;
   width: 25%;
   height: auto;
@@ -687,6 +711,15 @@
   align-items: center;
   text-align: center;
   border-radius: 10px;
+}
+
+.workoutIdeas{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* background: #000; */
 }
 
 /* END android.html */
