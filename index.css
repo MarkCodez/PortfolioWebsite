@@ -630,7 +630,14 @@
   position: absolute;
   height: 80vh;
   margin-top: 40%;
-  margin-left: 10%;
+  margin-left: 15%;
+}
+
+.introGainzRUs #profileActivity{
+  position: absolute;
+  height: 80vh;
+  margin-top: 40%;
+  right: 15%;
 }
 
 #bubble1TopRight {
@@ -647,22 +654,22 @@
 #bubble1Left {
   position: absolute;
   top: 65%;
-  left: 0%;
+  align-self: center;
   width: 650px;
   height: 200px;
   background-color: #0d6efd;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 10px 10px 10px;
   z-index: 1;
 }
 
 #bubble2Right {
   position: absolute;
-  top: 120%;
-  right: 0%;
+  top: 125%;
+  align-self: center;
   width: 650px;
   height: 200px;
   background-color: #0d6efd;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 10px 10px 10px;
   z-index: -1;
 }
 
@@ -672,7 +679,7 @@
   right: 10%;
   width: 25%;
   height: auto;
-  background-color: rgb(173, 173, 173);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -681,31 +688,29 @@
   z-index: 2;
 }
 
-#gainzrusPPT
-{
-  position: absolute;
-  padding: 5px;
-  bottom: 20%;
-  right: 10%;
-}
-
-.projectLinks #gainzrusRepo{
+#gainzrusRepo{
   position: absolute;
   padding: 10px;
-  bottom: 20%;
-  right: 20%;
+  bottom: 10px;
+  right: 120px;
   background: #000;
   border-radius: 10px;
   color: white;
 }
 
+#gainzrusPPT{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 #mainActivityGainzRUsTextBG {
   position: absolute;
-  top: 115%;
-  right: 10%;
+  top: 120%;
+  align-self: center;
   width: 25%;
   height: auto;
-  background-color: rgb(173, 173, 173);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,12 +719,34 @@
 }
 
 .workoutIdeas{
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   /* background: #000; */
+}
+
+#randomActivity{
+  position: absolute;
+  height: 80vh;
+  /* margin-top: 40%; */
+  margin-top: 8%;
+  left: 2%;
+}
+
+#workoutPlanActivity{
+  position: absolute;
+  height: 80vh;
+  margin-top: 8%;
+  left: 25%;
+}
+
+#workoutActivityText{
+  align-self: flex-end;
+  max-width: 25%;
+  margin-top: 30%;
+  margin-right: 15%;
 }
 
 /* END android.html */
