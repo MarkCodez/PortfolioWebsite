@@ -395,7 +395,7 @@
 }
 
 .myProjects .card {
-  background-image: linear-gradient(120deg,  #e2f8ff 0%, #b0eaff 100%);
+  background-image: linear-gradient(120deg, #e2f8ff 0%, #b0eaff 100%);
   height: 17rem;
   width: 38rem;
 }
@@ -434,7 +434,7 @@
   right: 10px;
 }
 
-.flip-card-front{
+.flip-card-front {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,9 +442,8 @@
 }
 
 .flip-card-front img {
-  width: 350px;
-  height: 250px;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .shaking {
@@ -596,10 +595,11 @@
 #contactContent p {
   margin-top: 200px;
 }
+
 /* END section 5 - footer/contacts */
 
 /* android.html */
-.introGainzRUs{
+.introGainzRUs {
   /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
   min-height: 160vh;
   display: flex;
@@ -610,37 +610,23 @@
   /* min-height: 100vh; */
 }
 
-.introGainzRUs h3{
+.introGainzRUs h3 {
   position: absolute;
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 7%;
   z-index: 2;
 }
 
-.introGainzRUs #android{
+#android {
   position: absolute;
   height: 40vh;
   width: 40vw;
   margin-top: 10%;
-  margin-left: 0%;
+  align-self: left;
   z-index: 1;
 }
 
-.introGainzRUs #mainActivity{
-  position: absolute;
-  height: 80vh;
-  margin-top: 40%;
-  margin-left: 15%;
-}
-
-.introGainzRUs #profileActivity{
-  position: absolute;
-  height: 80vh;
-  margin-top: 40%;
-  right: 15%;
-}
-
-#bubble1TopRight {
+/* #bubble1TopRight {
   position: absolute;
   top: 0%;
   right: 15%;
@@ -671,11 +657,11 @@
   background-color: #0d6efd;
   border-radius: 10px 10px 10px 10px;
   z-index: -1;
-}
+} */
 
 #introGainzRUsTextBG {
   position: absolute;
-  top: 40%;
+  top: 35%;
   right: 10%;
   width: 25%;
   height: auto;
@@ -688,7 +674,7 @@
   z-index: 2;
 }
 
-#gainzrusRepo{
+#gainzrusRepo {
   position: absolute;
   padding: 10px;
   bottom: 10px;
@@ -698,7 +684,7 @@
   color: white;
 }
 
-#gainzrusPPT{
+#gainzrusPPT {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -718,35 +704,54 @@
   border-radius: 10px;
 }
 
-.workoutIdeas{
-  /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+/* generic layout for each section */
+.activitySection {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  /* background: #000; */
 }
 
-#randomActivity{
+/* generic size for each image */
+.gainzrusImgs {
   position: absolute;
   height: 80vh;
-  /* margin-top: 40%; */
-  margin-top: 8%;
-  left: 2%;
 }
 
-#workoutPlanActivity{
-  position: absolute;
-  height: 80vh;
-  margin-top: 8%;
-  left: 25%;
-}
-
-#workoutActivityText{
+/* generate workouts */
+#workoutPlanActivityText {
   align-self: flex-end;
   max-width: 25%;
   margin-top: 30%;
   margin-right: 15%;
+  text-align: right;
+}
+
+/* add workouts and view workout history */
+#logWorkoutActivityText {
+  align-self: flex-start;
+  max-width: 25%;
+  margin-top: 30%;
+  margin-left: 15%;
+  text-align: right;
+}
+
+/* personal record stats */
+#statsActivityText {
+  align-self: flex-start;
+  max-width: 25%;
+  margin-top: 30%;
+  margin-left: 40%;
+  text-align: left;
+}
+
+/* settings activity */
+#settingsActivityText {
+  align-self: flex-end;
+  max-width: 25%;
+  margin-top: 30%;
+  margin-right: 40%;
+  text-align: right;
 }
 
 /* END android.html */
