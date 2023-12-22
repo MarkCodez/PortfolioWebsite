@@ -12,7 +12,7 @@
 	<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
-<body>
+<body id="bodyGRU">
 
 	<!-- navbar with name and buttons for different pages -->
 	<div class="headerFixedNavbar">
@@ -24,51 +24,40 @@
 	</div>
 
 	<!-- first page of project. image and intro text -->
-	<section class="introGainzRUs" id="asdf1">
-		<h3>Android application development</h3>
-		<img id="android" src="android.png" alt="Android image">
+	<section class="introGainzRUs">
+		<h3 class="highlightedGRU" style="text-align: center; padding-top: 10%;">Android application development</h3>
 
 		<img class="gainzrusImgs" style="margin-top: 40%; margin-left: 15%;" src="GainzRUs/mainActivity.jpg" alt="Main Activity">
 
 		<img class="gainzrusImgs" style="margin-top: 40%; right: 15%;" src="GainzRUs/profilePage.jpg" alt="Profile Activity">
 
-		<!-- <div id="bubble1TopRight"></div> -->
-		<!-- <div id="bubble1Left"></div> -->
-
-		<div id="introGainzRUsTextBG">
-			<p id="introGainzRUsText" style="padding: 10px 10px 30px 10px; text-align: left;">
-				Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android application
-				to help you track and analyze your workouts.
-			</p>
-
-			<a href="https://docs.google.com/presentation/d/1H0-PgzqVFgOEfwK06L0JWtLdgaEXWUvIm9_yL4DUiG0/edit#slide=id.p" target="_blank" id="gainzrusPPT">Slideshow -></a>
+		<p id="introGainzRUsText" style="padding: 10px 10px 45px 10px;">
+			Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android application
+			to help you track and analyze your workouts.
+			<!-- <a href="https://docs.google.com/presentation/d/1H0-PgzqVFgOEfwK06L0JWtLdgaEXWUvIm9_yL4DUiG0/edit#slide=id.p" target="_blank" id="gainzrusPPT">Slideshow -></a> -->
 			<a class="fa fa-github" id="gainzrusRepo" href="https://github.com/GainzRUs/GainzRUs" target="_blank" rel="noopener noreferrer" title="GitHub"></a>
-		</div>
+		</p>
 
 		<small id="scrollText" style="color: black;">Scroll</small>
 		<i class="fa fa-arrow-down" style="color: black;"></i>
 
-		<div id="mainActivityGainzRUsTextBG">
-			<p id="mainActivityGainzRUsText" style="padding: 10px;">
-				Using both Java and XML in the Android studio IDE the Gainz R Us app is
-				brought to life. Java and XML togerther allow the mesh between creativity and engagement.
-				Our app was made to be straight-forward and intuitive, with no distractions, you can
-				get right to work.
-			</p>
-		</div>
-
-		<!-- <div id="bubble2Right"></div> -->
+		<p id="middleTextBubbleGRU" style="padding: 10px; text-align: center;">
+			Using both Java and XML in the Android studio IDE the Gainz R Us app is
+			brought to life. Java and XML togerther allow the mesh between creativity and engagement.
+			Our app was made to be straight-forward and intuitive, with no distractions, you can
+			get right to work.
+		</p>
 
 	</section>
 
 	<!-- get workout ideas for user -->
 	<section class="activitySection">
-		<h3 style="padding-top: 25px; text-align: center;">No workouts in mind?</h3>
+		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">No workouts in mind?</h3>
 
 		<img class="gainzrusImgs" src="GainzRUs/workoutPlan.jpg" style="margin-top: 7%; left: 25%;">
 		<img class="gainzrusImgs" src="GainzRUs/randomWorkout.jpg" style="margin-top: 7%; left: 2%;">
 
-		<p id="workoutPlanActivityText">
+		<p style="padding: 10px;" id="workoutPlanActivityText">
 			Quickly choose to generate a random workout by type or intensity
 			and get right to work. No plan, no stress, Gainz R Us has your back!
 		</p>
@@ -76,12 +65,12 @@
 
 	<!-- add workouts and view past workouts -->
 	<section class="activitySection">
-		<h3 style="padding-top: 25px; text-align: center;">Log and view workout history</h3>
+		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Log and view workout history</h3>
 
 		<img class="gainzrusImgs" src="GainzRUs/addExerciseActivity.jpg" style="margin-top: 7%; right: 25%;">
 		<img class="gainzrusImgs" src="GainzRUs/workoutHistoryActivity.jpg" style="margin-top: 7%; right: 2%;">
 
-		<p id="logWorkoutActivityText">
+		<p style="padding: 10px;" id="logWorkoutActivityText">
 			Seamlessly save workouts by logging them. Options include exercise, sets, reps, weight,
 			and workout rating. Past workouts are just a finger-tap away.
 		</p>
@@ -89,30 +78,39 @@
 
 	<!-- user's personal records stats -->
 	<section class="activitySection">
-		<h3 style="padding-top: 25px; text-align: center;">Shatter records</h3>
+		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Shatter records</h3>
 
 		<img class="gainzrusImgs" src="GainzRUs/statsActivity.jpg" style="margin-top: 7%; left: 15%;">
 
-		<p id="statsActivityText">
+		<p style="padding: 10px;" id="statsActivityText">
 			With Gainz R Us, the sky's the limit. Every new weightlifting record for the big 3
 			compound exercises are tracked and displayed, so you know your next big milestone!
 		</p>
 	</section>
 
 	<!-- user's settings option, clear data -->
-	<section class="activitySection">
-		<h3 style="padding-top: 80px; text-align: center;">Embark on a new journey</h3>
+	<section class="activitySection" >
+		<h3 class="highlightedGRU" style="padding-top: 80px; text-align: center;">Embark on a new journey</h3>
 
 		<img class="gainzrusImgs" src="GainzRUs/settingsActivity.jpg" style="margin-top: 10%; right: 15%;">
 
-		<p id="settingsActivityText">
+		<p style="padding: 10px;" id="settingsActivityText">
 			Swiftly erase all data you've ever entered. Unlock a new chapter of exercise records.
 		</p>
 	</section>
 
+	<!-- scrolling animations, delayed appearance -->
 	<script>
-		ScrollReveal().reveal('.activitySection', {delay: 500})
-		ScrollReveal().reveal('.activitySection', { distance: '50px' });
+		ScrollReveal().reveal('.introGainzRUs', {
+			delay: 300,
+			reset: true,
+		});
+
+		ScrollReveal().reveal('.activitySection', {
+			delay: 300,
+			distance: '50px',
+			reset: true
+		});
 	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
