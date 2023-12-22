@@ -135,19 +135,17 @@
 
 #scrollText {
   position: absolute;
-  text-align: center;
+  align-self: center;
   bottom: 20px;
-  left: 50%;
   animation: fadeIn 7s;
   color: white;
 }
 
 .fa-arrow-down {
   position: absolute;
-  text-align: center;
+  align-self: center;
   bottom: 18px;
-  left: 50%;
-  padding-left: 50px;
+  margin-left: 5%;
   animation: fadeIn 10s, bounce 2s 7;
   color: white;
 }
