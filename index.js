@@ -10,9 +10,6 @@ function navigateToProjects() {
 function navigateToSkills() {
     window.location.href = '#skillsContent';
 }
-function navigateToContacts() {
-    window.location.href = '#contactContent';
-}
 
 const card = document.querySelector('.flip-card-inner');
 card.classList.add('shaking');
