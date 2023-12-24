@@ -570,7 +570,21 @@
 }
 
 #contactContent p {
-  margin-top: 25px;
+  margin-top: 15px;
+}
+
+#contactContent input {
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: 3px solid rgb(0, 0, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+::placeholder{
+  color: #000;
+  opacity: 1;
 }
 
 /* END section 5 - footer/contacts */
