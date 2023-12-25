@@ -11,99 +11,67 @@
 	<script src="index.js"></script>
 </head>
 
-<body>
+<body style="background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);">
 
 	<!-- navbar with name and buttons for different pages -->
-	<!-- <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
-		<a class="navbar-brand" href="#">Navbar</a>
+	<nav id="headerFixedNavbar" class="navbar bg-light px-3 fixed-top">
+		<h2 style="color: var(--bs-primary);">Mark Eskander</h2>
 		<ul class="nav nav-pills">
 			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading1">First</a>
+				<a class="nav-link" href="#homeContent">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#scrollspyHeading2">Second</a>
+				<a class="nav-link" href="#timelineContent">Timeline</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#projectContent">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skillsContent">Skills</a>
 			</li>
 		</ul>
 	</nav>
-	<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-		<h4 id="scrollspyHeading1">First heading</h4>
-		<p>...</p>
-		<h4 id="scrollspyHeading2">Second heading</h4>
-		<p>...</p>
-		<h4 id="scrollspyHeading3">Third heading</h4>
-		<p>...</p>
-		<h4 id="scrollspyHeading4">Fourth heading</h4>
-		<p>...</p>
-		<h4 id="scrollspyHeading5">Fifth heading</h4>
-		<p>...</p>
-	</div> -->
 
-	<div class="headerFixedNavbar">
-		<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-			<div class="container-fluid ">
+	<!-- active navbar using scrollspy bootstrap. page content inside here -->
+	<div data-bs-spy="scroll" data-bs-target="#headerFixedNavbar" data-bs-offset="0" tabindex="0">
 
-				<h2 style="color: var(--bs-primary);">Mark Eskander</h2>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-					<ul class="nav nav-pills nav-fill gap-2 p-1 small " id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-black); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-gray-200);">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active rounded-5" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" onclick="navigateToHome()">Home</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link rounded-5" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="navigateToTimeline()">Timeline</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link rounded-5" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="navigateToProjects()">Projects</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link rounded-5" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" onclick="navigateToSkills()">Skills</button>
-						</li>
-					</ul>
-				</div>
+		<!-- home page section. image, contact links, intro text -->
+		<section class="introContext" id="homeContent">
+
+			<img id="introImage" src="profilePicture.jpg" alt="Profile Picture">
+
+			<div class="contactLinks">
+
+				<a class="fa fa-linkedin" href="https://www.linkedin.com/in/mark-eskander-5b1334226/" target="_blank" rel="noopener noreferrer" title="LinkedIn"></a>
+
+				<a class="fa fa-envelope" href="mailto:markeskander745@gmail.com" title="Email"></a>
+
+				<a class="fa fa-phone">
+					<span class="tooltiptext tooltip">(615)-938-6556</span>
+				</a>
+
+				<a class="fa fa-github" href="https://github.com/MarkCodez" target="_blank" rel="noopener noreferrer" title="GitHub"></a>
+
+				<a class="fa fa-map-marker">
+					<span class="tooltiptext tooltip">Nashville, TN</span>
+				</a>
+
 			</div>
-		</nav>
-	</div>
 
-	<!-- home page section. image, contact links, intro text -->
-	<section class="introContext" id="homeContent">
+			<div id="introContentTextBG">
+				<p id="introContextText">
+					Welcome to my website! I'm Mark, and I'm thrilled you're here. This platform serves as an introduction to who I am and what I bring to the table.
+					Currently a senior in Computer Science at Middle Tennessee State University, I'm actively seeking roles as a software engineer to contribute my
+					skills for a company's success. My passion lies in developing Android applications, tackling coding challenges, and staying active. Don't hesitate
+					to reach out through any of the available contact links!
+				</p>
+			</div>
 
-		<img id="introImage" src="profilePicture.jpg" alt="Profile Picture">
+			<small id="scrollText">Scroll</small>
+			<i class="fa fa-arrow-down"></i>
 
-		<div class="contactLinks">
+		</section>
 
-			<a class="fa fa-linkedin" href="https://www.linkedin.com/in/mark-eskander-5b1334226/" target="_blank" rel="noopener noreferrer" title="LinkedIn"></a>
-
-			<a class="fa fa-envelope" href="mailto:markeskander745@gmail.com" title="Email"></a>
-
-			<a class="fa fa-phone">
-				<span class="tooltiptext tooltip">(615)-938-6556</span>
-			</a>
-
-			<a class="fa fa-github" href="https://github.com/MarkCodez" target="_blank" rel="noopener noreferrer" title="GitHub"></a>
-
-			<a class="fa fa-map-marker">
-				<span class="tooltiptext tooltip">Nashville, TN</span>
-			</a>
-
-		</div>
-
-		<div id="introContentTextBG">
-			<p id="introContextText">
-				Welcome to my website! I'm Mark, and I'm thrilled you're here. This platform serves as an introduction to who I am and what I bring to the table.
-				Currently a senior in Computer Science at Middle Tennessee State University, I'm actively seeking roles as a software engineer to contribute my
-				skills for a company's success. My passion lies in developing Android applications, tackling coding challenges, and staying active. Don't hesitate
-				to reach out through any of the available contact links!
-			</p>
-		</div>
-
-		<small id="scrollText">Scroll</small>
-		<i class="fa fa-arrow-down"></i>
-
-	</section>
-
-	<div class="infoChunk" style="background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);">
 		<!-- timeline section, education & experience -->
 		<section class="timelineSection" id="timelineContent">
 
@@ -494,7 +462,7 @@
 		</section>
 	</div>
 
-	<!-- contact section -->
+	<!-- footer/contact section -->
 	<section class="myContacts" id="contactContent">
 
 		<div class="container">
@@ -510,7 +478,7 @@
 					<form action=https://getform.io/f/358855d4-1b8c-45c5-8abe-a173786f27f7 method="POST">
 						<input type="text" name="Name" placeholder="Your name" required> <br>
 						<input type="email" name="Email" placeholder="Your Email" required> <br>
-						<input type="text" name="Message" placeholder="Your Message" required> <br>
+						<input type="text" name="Message" placeholder="Your message" required> <br>
 						<input type="hidden" name="_gotcha" style="display:none !important">
 						<button style="border-radius: 10px; border: 3px solid #6dff18; padding: 5px; width: 50%; margin-left: 25%;" type="submit">Send</button>
 					</form>

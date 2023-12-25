@@ -1,6 +1,16 @@
 /* section 1 - navbar + home page */
-.navbar .container-fluid {
+.navbar {
   font-weight: bold;
+}
+
+.nav-link {
+  color: black !important;
+  
+}
+.nav-link.active {
+  color: #0d6efd !important;
+  background-color: #bebbbb !important;
+  text-transform: uppercase;
 }
 
 .introContext {
@@ -210,7 +220,6 @@
 .timelineSection h2 {
   padding-top: 80px;
   text-align: center;
-  left: 50%;
 }
 
 .timelineSection h3 {
