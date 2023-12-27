@@ -9,7 +9,7 @@
 }
 .nav-link.active {
   color: #0d6efd !important;
-  background-color: #bebbbb !important;
+  background-image: linear-gradient(30deg, #93a5cf 0%, #e4efe9 100%) !important;
   text-transform: uppercase;
 }
 
@@ -599,10 +599,6 @@
 /* END section 5 - footer/contacts */
 
 /* android.html - project 1 */
-#bodyGRU {
-  background-image: linear-gradient(180deg, #e2f8ff 0%, #9ebac4 100%);
-}
-
 .introGainzRUs {
   min-height: 160vh;
   display: flex;
