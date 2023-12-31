@@ -234,6 +234,7 @@
   margin: 25px auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .containerT {
