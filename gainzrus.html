@@ -7,36 +7,69 @@
 	<title>Mark Eskander | Software Engineer</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="index.js"></script>
 	<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
-<body id="bodyGRU">
+<body style="background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);">
 
 	<!-- navbar with name and buttons for different pages -->
 	<div class="headerFixedNavbar">
-		<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
 			<div class="container-fluid ">
 				<h2 style="color: var(--bs-primary);">Gainz R Us</h2>
+				<img src="GainzRUs/weights.jpg" style="width: 40px; height: 40px;">
 			</div>
 		</nav>
 	</div>
 
 	<!-- first page of project. image and intro text -->
 	<section class="introGainzRUs">
-		<h3 class="highlightedGRU" style="text-align: center; padding-top: 10%;">Android application development</h3>
+		<h3 class="highlightedGRU" style="text-align: center;">Android application</h3>
 
-		<img class="gainzrusImgs" style="margin-top: 40%; margin-left: 15%;" src="GainzRUs/mainActivity.jpg" alt="Main Activity">
+		<div class="container">
+			<!-- row to hold info -->
+			<div class="row justify-content-center" style="padding-top: 2em;">
+				<!-- 1st column with image and intro info -->
+				<div class="col-6">
+					<p style="font-size: larger;">
+						Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android
+						application to help you track and analyze your workouts.
+					</p>
+					<img src="GainzRUs/welcomeImg.jpg" style="width: 500px; height: 350px;">
+				</div>
 
-		<img class="gainzrusImgs" style="margin-top: 40%; right: 15%;" src="GainzRUs/profilePage.jpg" alt="Profile Activity">
+				<!-- 2nd column with project info -->
+				<div class="col-4">
+					<h6>Role</h6>
+					<p>Front-end developer</p>
 
-		<p id="introGainzRUsText" style="padding: 10px 10px 45px 10px;">
-			Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android application
-			to help you track and analyze your workouts.
-			<!-- <a href="https://docs.google.com/presentation/d/1H0-PgzqVFgOEfwK06L0JWtLdgaEXWUvIm9_yL4DUiG0/edit#slide=id.p" target="_blank" id="gainzrusPPT">Slideshow -></a> -->
-			<a class="fa fa-github" id="gainzrusRepo" href="https://github.com/GainzRUs/GainzRUs" target="_blank" rel="noopener noreferrer" title="GitHub"></a>
-		</p>
+					<h6>Project type</h6>
+					<p>Mobile application</p>
+
+
+					<h6>Date</h6>
+					<p>December 2023</p>
+
+
+					<h6>Team</h6>
+					<p>5 software engineers</p>
+
+					<h6>GitHub</h6>
+					<a class="fa fa-github" id="gitProjectRepo" href="https://github.com/GainzRUs/GainzRUs"
+						target="_blank" rel="noopener noreferrer" title="GitHub"></a>
+
+				</div>
+			</div>
+		</div>
+
+		<img class="gainzrusImgs" style="margin-top: 40%; margin-left: 15%;" src="GainzRUs/mainActivity.jpg"
+			alt="Main Activity">
+
+		<img class="gainzrusImgs" style="margin-top: 40%; right: 15%;" src="GainzRUs/profilePage.jpg"
+			alt="Profile Activity">
 
 		<small id="scrollText" style="color: black;">Scroll</small>
 		<i class="fa fa-arrow-down" style="color: black;"></i>
@@ -90,7 +123,7 @@
 
 	<!-- user's settings option, clear data -->
 	<section class="activitySection">
-		<h3 class="highlightedGRU" style="padding-top: 80px; text-align: center;">Embark on a new journey</h3>
+		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Embark on a new journey</h3>
 
 		<img class="gainzrusImgs" src="GainzRUs/settingsActivity.jpg" style="margin-top: 10%; right: 15%;">
 
@@ -98,6 +131,33 @@
 			Swiftly erase all data you've ever entered. Unlock a new chapter of exercise records.
 		</p>
 	</section>
+
+	<!-- other projects carousel -->
+	<h2 style="text-align: center; padding-top: 25px;">View other projects</h2>
+
+	<div class="carousel slide" data-bs-ride="carousel" data-interval="4000">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<a href="auctionwise.html">
+					<img class="d-block w-50 mx-auto" src="AuctionWise/client-server.png" style="height: 350px;">
+				</a>
+			</div>
+			<div class="carousel-item">
+				<a href="cards.html">
+					<img class="d-block w-50 mx-auto" src="Card game/cards.png" style="height: 350px;">
+				</a>
+			</div>
+			<div class="carousel-item">
+				<a href="brazil.html">
+					<img class="d-block w-50 mx-auto" src="Brazil website/brazil.png" style="height: 350px;">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<p class="w-75 mx-auto" style="border: dotted; padding: 10px; font-size: large; margin: 25px; font-weight: bold;">
+		© 2023 Mark Eskander
+	</p>
 
 	<!-- scrolling animations, delayed appearance -->
 	<script>
@@ -113,7 +173,9 @@
 		});
 	</script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 </body>
 

@@ -7,53 +7,154 @@
 	<title>Mark Eskander | Software Engineer</title>
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="index.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
-<body>
+<body style="background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);">
 
 	<!-- navbar with name and buttons for different pages -->
 	<div class="headerFixedNavbar">
-		<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+		<nav class="navbar navbar-expand-sm navbar-light bg-light">
 			<div class="container-fluid ">
-				<h2 style="color: var(--bs-primary);">Gainz R Us</h2>
+				<h2 style="color: var(--bs-primary);">AuctionWise</h2>
+				<img src="AuctionWise/client-server.png" style="width: 40px; height: 40px;">
 			</div>
 		</nav>
 	</div>
 
-	<!-- first page of project. image and intro text -->
-	<section class="introGainzRUs">
-		<h3>Android development</h3>
-		<img id="android" src="android.png" alt="Android image">
+	<div class="container">
+		<!-- first page of project. video and intro text -->
+		<section class="introAuctionWise" style="padding: 25px; max-height: 100vh;">
+			<h3 style="text-align: center;">Client-server application</h3>
 
-		<img id="mainActivity" src="gainzrus.jpg" alt="Main Activity">
+			<!-- row to hold info -->
+			<div class="row justify-content-center" style="padding-top: 2em;">
+				<!-- 1st column with video and intro -->
+				<div class="col-6">
+					<p style="font-size: larger;">
+						AuctionWise enables multiple users to concurrently view and bid on items up for sale. The server
+						accepts
+						incoming client requests and provides them with the auction service.
+					</p>
+					<iframe width="500" height="300" src="https://www.youtube.com/embed/Y7BG6DWyXMg"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
 
-		<!-- <div class="contactLinks">
+				<!-- 2nd column with project info -->
+				<div class="col-4">
+					<h6>Role</h6>
+					<p>Software engineer</p>
 
-			<a class="fa fa-github" href="https://github.com/GainzRUs/GainzRUs" target="_blank" rel="noopener noreferrer" title="GitHub"></a>
+					<h6>Project type</h6>
+					<p>Client-server program written in C</p>
 
-		</div> -->
 
-		<div id="bubble1"></div>
-		<div id="bubble2"></div>
+					<h6>Date</h6>
+					<p>April 2023</p>
 
-		<div id="introGainzRUsTextBG">
-			<p id="introGainzRUsText">
-				Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android application
-				to help users track and analyze their workouts.
-			</p>
 
-			<a href="https://docs.google.com/presentation/d/1H0-PgzqVFgOEfwK06L0JWtLdgaEXWUvIm9_yL4DUiG0/edit#slide=id.p" target="_blank" id="gainzrusPPT">Slideshow</a>
-			<a href="https://github.com/GainzRUs/GainzRUs" target="_blank" id="gainzrusRepo">GitHub repository</a>
+					<h6>Team</h6>
+					<p>1 software engineer</p>
+
+					<h6>GitHub</h6>
+					<a class="fa fa-github" id="gitProjectRepo" href="https://github.com/MarkCodez/AuctionWise"
+						target="_blank" rel="noopener noreferrer" title="GitHub"></a>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- details about the project -->
+		<section class="aboutAuctionWise" style="min-height: 100vh;">
+			<!-- what -->
+			<div class="row" style="padding: 25px 0 25px 0;">
+				<div class="col-6">
+					<h3 style="text-align: end;">What</h3>
+					<p style="text-align: end;">
+						AuctionWise is a user-friendly bidding service written in C. It simulates the auctioning
+						experience where users can connect to a local server and participate in auctions.
+						Users can authenticate themselves, browse through a variety of items, and place bids which
+						account for real-time changes creating an interactive and life-like auction experience.
+					</p>
+				</div>
+
+				<div class="col-6">
+					<img src="AuctionWise/whatImg.png" style="width: 500px; height: 300px;">
+				</div>
+			</div>
+
+			<!-- how -->
+			<div class="row" style="padding: 25px 0 25px 0;">
+				<div class="col-6 d-flex justify-content-end">
+					<img src="AuctionWise/howImg.jpg" style="width: 500px; height: 300px;">
+				</div>
+				<div class="col-6">
+					<h3 style="text-align: start;">How</h3>
+					<p>
+						AuctionWise operates using a client-server architecture. The program leverages
+						socket programming in C to establish communication channels between clients and the server.
+						Clients can send and receive messages to and from the server, facilitating seamless
+						interaction with the auction service. This approach ensures multiple users can concurrently
+						connect to the server, simulating a real-time bidding experience as they engage with the
+						AuctionWise service.
+					</p>
+				</div>
+			</div>					
+
+			<!-- why -->
+			<div class="row" style="padding: 25px 0 25px 0;">
+				<div class="col-6">
+					<h3 style="text-align: end;">Why</h3>
+					<p style="text-align: end;">
+						AuctionWise provides users with the thrill of traditional auctions in the digital realm. It
+						offers a convenient and accessible way for users to explore unique items and engage in bidding.
+						The platform is made to be simple, for everyone to use.
+					</p>
+				</div>
+
+				<div class="col-6">
+					<img src="AuctionWise/whyImg.jpg" style="width: 500px; height: 300px;">
+				</div>
+			</div>
+		</section>
+
+		<!-- other projects carousel -->
+		<h2 style="text-align: center; padding-top: 25px;">View other projects</h2>
+
+		<div class="carousel slide" data-bs-ride="carousel" data-interval="4000">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="gainzrus.html">
+						<img class="d-block w-75 mx-auto" src="GainzRUs/weights.jpg" style="height: 350px;">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="cards.html">
+						<img class="d-block w-75 mx-auto" src="Card game/cards.png" style="height: 350px;">
+					</a>
+				</div>
+				<div class="carousel-item">
+					<a href="brazil.html">
+						<img class="d-block w-75 mx-auto" src="Brazil website/brazil.png" style="height: 350px;">
+					</a>
+				</div>
+			</div>
 		</div>
 
-		<small id="scrollText" style="color: black;">Scroll</small>
-		<i class="fa fa-arrow-down" style="color: black;"></i>
+		<p style="border: dotted; padding: 10px; font-size: large; margin: 25px; font-weight: bold;">
+			© 2023 Mark Eskander
+		</p>
 
-	</section>
+	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 </body>
 
