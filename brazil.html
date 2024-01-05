@@ -19,8 +19,8 @@
 	<div class="headerFixedNavbar">
 		<nav class="navbar navbar-expand-sm navbar-light bg-light">
 			<div class="container-fluid ">
-				<h2 style="color: var(--bs-primary);">Hearts</h2>
-				<img src="Card game/cards.png" style="width: 40px; height: 40px;">
+				<h2 style="color: var(--bs-primary);">Brazil website</h2>
+				<img src="Brazil website/brazil.png" style="width: 40px; height: 40px;">
 			</div>
 		</nav>
 	</div>
@@ -28,38 +28,41 @@
 	<div class="container">
 		<!-- first page of project. video and intro text -->
 		<section style="padding: 25px; max-height: 100vh;">
-			<h3 style="text-align: center;">Interactive C++ game</h3>
+			<h3 style="text-align: center;">Income inequality in Brazil</h3>
 
 			<!-- row to hold info -->
 			<div class="row justify-content-center" style="padding-top: 2em;">
 				<!-- 1st column with video and intro -->
 				<div class="col-6">
 					<p style="font-size: larger;">
-						Hearts is a simple card game played by 4 people, in this case, 1 user and 3 computers.
-						The object of the game is to play cards strategically in a round-by-round format to accumulate
-						the least amount of total points at the end.
+						Our website addresses income inequality in Brazil and consists of engaging visual aids, such
+						as images, carousels, and different animations. The website aims to educate our audience about
+						the extent of the income gap in Brazil and the impact it has on different groups.
+						Check it out <a
+							href="https://b0b52fa9-8cb3-455a-882c-028cb4a4b4d3-00-1rda79kdviudp.global.replit.dev/index.html"
+							target="_blank">here</a>.
 					</p>
-					<img src="Card game/cards.png" style="width: 500px; height: 300px;">
+					<img src="Brazil website/welcomeImg.png" style="width: 500px; height: 300px;">
 				</div>
 
 				<!-- 2nd column with project info -->
 				<div class="col-4">
 					<h6>Role</h6>
-					<p>Backend developer</p>
+					<p>Front-end developer (HTML/CSS/Bootstrap)</p>
 
 					<h6>Project type</h6>
-					<p>Interactive computer card game</p>
+					<p>Informative website about life in Brazil</p>
 
 
 					<h6>Date</h6>
-					<p>September 2022</p>
+					<p>March 2023</p>
 
 
 					<h6>Team</h6>
-					<p>1 software engineer</p>
+					<p>4 web developers</p>
 
 					<h6>GitHub</h6>
-					<a class="fa fa-github" id="gitProjectRepo" href="https://github.com/MarkCodez/Hearts"
+					<a class="fa fa-github" id="gitProjectRepo" href="https://github.com/MarkCodez/Brazil-Website"
 						target="_blank" rel="noopener noreferrer" title="GitHub"></a>
 
 				</div>
@@ -71,49 +74,67 @@
 			<!-- what -->
 			<div class="row" style="padding: 25px 0 25px 0;">
 				<div class="col-6">
-					<h3 style="text-align: end;">Ready</h3>
-					<p style="text-align: end;"> ***Include screenshots for these rows ***
-						Run 'HeartsGame.exe' directly from your Windows terminal to play. In the game, you
-						will face 3 other computers to accumulate the lowest score total in the end.
+					<h3 style="text-align: end;">Ready...</h3>
+					<p class="w-75 ms-auto" style="text-align: end;">
+						Our website addresses income inequality in Brazil and consists of engaging visual aids, such
+						as images, carousels, and different animations. We analyzed the factors
+						contributing to Brazil's income inequality, including environmental, social, and economic
+						factors. The website aims to educate our audience about the extent of the income gap in Brazil
+						and its impact on different groups, including women, minorities, and the rural poor.
+						Hearts is a fun card game you can play at your own leisure against 3 computers.
+						It's easily accessible on any Windows computer terminal or through a C++ compatible IDE.
+						Check the <a href="https://github.com/MarkCodez/Hearts" target="_blank">GitHub</a>
+						repo for more info.
 					</p>
 				</div>
 
 				<div class="col-6">
-					<img src="AuctionWise/whatImg.png" style="width: 500px; height: 300px;">
+					<img src="Card game/readyCardsImg.jpg" style="width: 500px; height: 400px;">
 				</div>
 			</div>
 
 			<!-- how -->
 			<div class="row" style="padding: 25px 0 25px 0;">
 				<div class="col-6 d-flex justify-content-end">
-					<img src="AuctionWise/howImg.jpg" style="width: 500px; height: 300px;">
+					<img src="Card game/pointsImg.png" style="width: 500px; height: 400px;">
 				</div>
 				<div class="col-6">
-					<h3 style="text-align: start;">Steady</h3>
-					<p>
-						AuctionWise operates using a client-server architecture. The program leverages
-						socket programming in C to establish communication channels between clients and the server.
-						Clients can send and receive messages to and from the server, facilitating seamless
-						interaction with the auction service. This approach ensures multiple users can concurrently
-						connect to the server, simulating a real-time bidding experience as they engage with the
-						AuctionWise service.
+					<h3 style="text-align: start;">Steady...</h3>
+					<p class="w-75 me-auto" style="text-align: start;">
+						The goal of the game is to finish with the least amount of points. You can
+						only see your cards and you won't know what each of the computers play until
+						you play a card. Each player's cards are sorted by suit (Diamond, Heart, Spade, Club) then by
+						descending value (A, K, Q, J, 10...2).
+					<p id="hintText" style="color: rgb(34, 142, 56); font-weight: bold; width: fit-content;">
+						Hint
+					</p>
+					<span id="hintTooltip" class="tooltip w-75">
+						Remember cards that have/haven't been played. Also note that computers will play
+						the top most card with a matching suit or the top most card of their decks each round.
+					</span>
 					</p>
 				</div>
 			</div>
 
 			<!-- why -->
 			<div class="row" style="padding: 25px 0 25px 0;">
-				<div class="col-6">
-					<h3 style="text-align: end;">Go</h3>
-					<p style="text-align: end;">
-						AuctionWise provides users with the thrill of traditional auctions in the digital realm. It
-						offers a convenient and accessible way for users to explore unique items and engage in bidding.
-						The platform is made to be simple, for everyone to use.
+				<div class="col-4">
+					<img src="Card game/duelImg1.png" style="width: 400px; height: 400px;">
+				</div>
+
+				<div class="col-4">
+					<h3 style="text-align: center;">Duel!</h3>
+					<p style="text-align: center;">
+						The game will start with whoever has the 2 of Clubs. Then, the person who plays the highest
+						value card of the leading suit each round will be first to play the next round. That person who
+						plays the highest value card of the leading suit will also accumulate the point total of that
+						round. After 13 rounds there will be 1 winner, whomever accumulated the least amount of points.
+						Goodluck!
 					</p>
 				</div>
 
-				<div class="col-6">
-					<img src="AuctionWise/whyImg.jpg" style="width: 500px; height: 300px;">
+				<div class="col-4">
+					<img src="Card game/duelImg2.png" style="width: 400px; height: 400px;">
 				</div>
 			</div>
 		</section>
@@ -134,8 +155,8 @@
 					</a>
 				</div>
 				<div class="carousel-item">
-					<a href="brazil.html">
-						<img class="d-block w-75 mx-auto" src="Brazil website/brazil.png" style="height: 350px;">
+					<a href="cards.html">
+						<img class="d-block w-75 mx-auto" src="Card game/cards.png" style="height: 350px;">
 					</a>
 				</div>
 			</div>

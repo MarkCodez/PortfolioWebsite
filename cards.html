@@ -39,7 +39,7 @@
 						The object of the game is to play cards strategically in a round-by-round format to accumulate
 						the least amount of total points at the end.
 					</p>
-					<img src="Card game/cards.png" style="width: 500px; height: 300px;">
+					<img src="Card game/playerVComputer.jpg" style="width: 500px; height: 300px;">
 				</div>
 
 				<!-- 2nd column with project info -->
@@ -97,10 +97,13 @@
 						only see your cards and you won't know what each of the computers play until
 						you play a card. Each player's cards are sorted by suit (Diamond, Heart, Spade, Club) then by
 						descending value (A, K, Q, J, 10...2).
-					<p style="color: rgb(34, 142, 56); font-weight: bold;">
+					<p id="hintText" style="color: rgb(34, 142, 56); font-weight: bold; width: fit-content;">
 						Hint
-						<span class="tooltip">Remember cards that have/haven't been played.</span>
 					</p>
+					<span id="hintTooltip" class="tooltip w-75">
+						Remember cards that have/haven't been played. Also note that computers will play
+						the top most card with a matching suit or the top most card of their decks each round.
+					</span>
 					</p>
 				</div>
 			</div>
