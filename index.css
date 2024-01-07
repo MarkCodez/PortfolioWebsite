@@ -14,7 +14,7 @@
 }
 
 .introContext {
-  background-image: url(Home/laptop-hp.png);
+  background-image: url(Home/bgHome.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -573,7 +573,7 @@
 
 /* section 5 - footer/contacts */
 .myContacts {
-  background-color: #000;
+  background-image: url(Contact/bgContact.jpg);
   display: flex;
   flex-direction: column;
 }
