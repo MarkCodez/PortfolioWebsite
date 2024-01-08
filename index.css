@@ -26,6 +26,20 @@
   text-align: left;
 }
 
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+      background-attachment: scroll;
+ }
+}
+
+
 #introImage {
   justify-content: center;
   width: 500px;
@@ -510,7 +524,7 @@
 }
 
 .mySkills h3 {
-  background-image: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
 }
@@ -576,6 +590,7 @@
   background-image: url(Contact/bgContact.jpg);
   display: flex;
   flex-direction: column;
+  min-height: 50vh;
 }
 
 #contactContent p {
