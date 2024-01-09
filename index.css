@@ -42,7 +42,9 @@
 
 #introImage {
   width: 500px;
-  height: 500px;
+  height: auto;
+  max-width: 85%;
+  max-height: 85%;
   animation: fadeIn 3s;
   box-shadow: 10px 10px 100px white;
   border-radius: 100%;
@@ -86,7 +88,8 @@
 .contactLinks {
   display: flex;
   position: absolute;
-  gap: 70px;
+  gap: 60px;
+  top: 75%;
 }
 
 .contactLinks i,
