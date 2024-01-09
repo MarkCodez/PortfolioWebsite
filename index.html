@@ -10,7 +10,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="index.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<link rel="icon" href="/Home/profilePicture.jpg">
 </head>
 
@@ -41,49 +41,52 @@
 		<!-- home page section. image, contact links, intro text -->
 		<section class="introContext parallax" id="homeContent">
 
-			<div class="row">
-				<div class="col-6 justify-content-center d-flex">
-					<img id="introImage" src="Home/profilePicture.jpg" alt="Profile Picture">
+			<div class="container">
+				<div class="row">
+					<div class="col-6 justify-content-center d-flex">
+						<img id="introImage" src="Home/profilePicture.jpg" alt="Profile Picture">
 
-					<div class="contactLinks">
+						<div class="contactLinks">
 
-						<a class="fa fa-linkedin" href="https://www.linkedin.com/in/mark-eskander-5b1334226/"
-							target="_blank" rel="noopener noreferrer" title="LinkedIn"></a>
+							<a href="https://www.linkedin.com/in/mark-eskander-5b1334226/" target="_blank"
+								rel="noopener noreferrer" title="LinkedIn">
+								<i class="bi bi-linkedin"></i>
+							</a>
+							
+							<i class="bi bi-envelope-fill">
+								<span class="tooltiptext tooltip">MarkEskander745@gmail.com</span>
+							</i>
 
-						<a class="fa fa-envelope" href="mailto:markeskander745@gmail.com" title="Email"></a>
+							<i class="bi bi-telephone-fill">
+								<span class="tooltiptext tooltip">(615)-938-6556</span>
+							</i>
 
-						<a class="fa fa-phone">
-							<span class="tooltiptext tooltip">(615)-938-6556</span>
-						</a>
+							<a href="https://github.com/MarkCodez" target="_blank" rel="noopener noreferrer"
+								title="GitHub">
+								<i class="bi bi-github"></i>
+							</a>
 
-						<a class="fa fa-github" href="https://github.com/MarkCodez" target="_blank"
-							rel="noopener noreferrer" title="GitHub"></a>
+							<i class="bi bi-geo-alt">
+								<span class="tooltiptext tooltip">Nashville, TN</span>
+							</i>
+						</div>
+					</div>
 
-						<i class="bi bi-github"></i>
-
-						<a class="fa fa-map-marker">
-							<span class="tooltiptext tooltip">Nashville, TN</span>
-						</a>
-
+					<div class="col-6 d-flex align-items-center justify-content-center">
+						<p id="introContextText">
+							Welcome to my website! I'm Mark, and I'm thrilled you're here. This platform serves as an
+							introduction to who I am and what I bring to the table. Currently a senior in Computer
+							Science at Middle Tennessee State University, I'm actively seeking roles as a software
+							engineer to contribute my skills for a company's success. My passion lies in developing
+							Android applications, tackling coding challenges, and staying active. Don't hesitate to
+							reach out through any of the available contact links!
+						</p>
 					</div>
 				</div>
-
-				<div class="col-6 d-flex align-items-center justify-content-center">
-					<p id="introContextText">
-						Welcome to my website! I'm Mark, and I'm thrilled you're here. This platform serves as an
-						introduction to who I am and what I bring to the table.
-						Currently a senior in Computer Science at Middle Tennessee State University, I'm actively
-						seeking roles as a software engineer to contribute my
-						skills for a company's success. My passion lies in developing Android applications, tackling
-						coding challenges, and staying active. Don't hesitate to reach out through any of the available
-						contact links!
-					</p>
-				</div>
-
 			</div>
 
 			<small id="scrollText">Scroll</small>
-			<i class="fa fa-arrow-down"></i>
+			<i class="bi bi-arrow-down-short"></i>
 
 		</section>
 

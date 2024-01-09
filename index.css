@@ -48,38 +48,36 @@
   border-radius: 100%;
 }
 
-.fa {
-  padding: 20px; 
-  height: 30px; 
-  width: 30px;
-  text-align: center;
+.bi {
+  font-size: 1.5rem;
+  padding: 0 10px 0 10px;
 }
 
-.fa-linkedin {
+.bi-linkedin {
   background: #0a66c2;
   border-radius: 10px;
   color: white;
 }
 
-.fa-envelope {
+.bi-envelope-fill {
   background: #ee5555;
   border-radius: 10px;
   color: white;
 }
 
-.fa-phone {
+.bi-telephone-fill {
   background: rgb(18, 204, 1);
   border-radius: 10px;
   color: white;
 }
 
-.fa-github {
+.bi-github {
   background: #000;
   border-radius: 10px;
   color: white;
 }
 
-.fa-map-marker {
+.bi-geo-alt {
   background: #ffa500;
   border-radius: 10px;
   color: #000;
@@ -91,18 +89,19 @@
   gap: 70px;
 }
 
+.contactLinks i,
 .contactLinks a {
   animation: iconShootUp 1s ease-out forwards;
   opacity: 0;
   transform: translateY(100px);
 }
 
-.contactLinks a:nth-child(2) {
+.contactLinks i:nth-child(2) {
   animation: iconShootUp 1s ease-out forwards;
   animation-delay: 0.5s;
 }
 
-.contactLinks a:nth-child(3) {
+.contactLinks i:nth-child(3) {
   animation: iconShootUp 1s ease-out forwards;
   animation-delay: 1s;
 }
@@ -112,7 +111,7 @@
   animation-delay: 1.5s;
 }
 
-.contactLinks a:nth-child(5) {
+.contactLinks i:nth-child(5) {
   animation: iconShootUp 1s ease-out forwards;
   animation-delay: 2s;
 }
@@ -124,8 +123,9 @@
   }
 }
 
-.fa-map-marker .tooltiptext,
-.fa-phone .tooltiptext {
+.bi-geo-alt .tooltiptext,
+.bi-telephone-fill .tooltiptext,
+.bi-envelope-fill .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -142,8 +142,9 @@
   transition: opacity 0.3s;
 }
 
-.fa-map-marker:hover .tooltiptext,
-.fa-phone:hover .tooltiptext {
+.bi-geo-alt:hover .tooltiptext,
+.bi-telephone-fill:hover .tooltiptext,
+.bi-envelope-fill:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
@@ -156,7 +157,7 @@
   color: white;
 }
 
-.fa-arrow-down {
+.bi-arrow-down-short {
   position: absolute;
   align-self: center;
   bottom: 18px;
