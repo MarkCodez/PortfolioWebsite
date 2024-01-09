@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   padding: 20px;
   text-align: left;
 }
@@ -41,23 +41,18 @@
 
 
 #introImage {
-  justify-content: center;
   width: 500px;
   height: 500px;
   animation: fadeIn 3s;
-  padding: 0px;
   box-shadow: 10px 10px 100px white;
   border-radius: 100%;
-  margin-left: 100px;
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  height: 30px;
+  padding: 20px; 
+  height: 30px; 
   width: 30px;
-  align-items: center;
-  text-decoration: none;
+  text-align: center;
 }
 
 .fa-linkedin {
@@ -92,10 +87,7 @@
 
 .contactLinks {
   display: flex;
-  justify-content: center;
   position: absolute;
-  margin-top: 500px;
-  margin-left: 100px;
   gap: 70px;
 }
 
@@ -202,24 +194,10 @@
   }
 }
 
-#introContentTextBG {
-  position: absolute;
-  top: 35%;
-  right: 10%;
-  width: 30%;
-  height: auto;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 50px;
-  animation: fadeIn 3s;
-}
-
 #introContextText {
-  font-size: 18px;
-  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: larger;
 }
 
 /* END of section 1 - navbar + home page */
@@ -524,8 +502,8 @@
 }
 
 .mySkills h3 {
-  background-color: white;
   padding: 10px;
+  border: 3px solid var(--bs-primary);
   border-radius: 5px;
 }
 
@@ -599,9 +577,8 @@
 
 #contactContent input {
   margin-bottom: 10px;
-  background-color: rgb(255, 255, 255);
   color: #000;
-  border: 3px solid rgb(0, 0, 255);
+  border: 3px solid var(--bs-primary);
   padding: 10px;
   border-radius: 5px;
 }
