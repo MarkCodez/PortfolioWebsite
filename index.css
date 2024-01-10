@@ -13,17 +13,14 @@
   text-transform: uppercase;
 }
 
-.introContext {
-  background-image: url(Home/bgHome.jpg);
-  background-size: cover;
-  background-position: center;
+#homeContent {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
-  padding: 20px;
-  text-align: left;
+  position: relative;
+  background-image: url('Home/bgHome.jpg');
+  animation: fadeIn 3s;
 }
 
 .parallax{
@@ -45,7 +42,6 @@
   height: auto;
   max-width: 85%;
   max-height: 85%;
-  animation: fadeIn 3s;
   box-shadow: 10px 10px 100px white;
   border-radius: 100%;
 }
