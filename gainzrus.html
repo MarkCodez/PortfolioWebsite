@@ -29,22 +29,24 @@
 
 	<!-- first page of project. image and intro text -->
 	<section class="introGainzRUs">
-		<h3 class="highlightedGRU" style="text-align: center;">Android application</h3>
+		<h3 style="text-align: center;">Android application</h3>
+		<div class="highlightedGRU"></div>
 
 		<div class="container">
 			<!-- row to hold info -->
 			<div class="row justify-content-center" style="padding-top: 2em;">
 				<!-- 1st column with image and intro info -->
-				<div class="col-6">
+				<div class="col-md-6 text-center  mt-2 mb-2">
 					<p style="font-size: larger;">
 						Made by a team of 5 distinct developers, Gainz R Us is a simple fitness tracker android
 						application to help you track and analyze your workouts.
 					</p>
-					<img src="GainzRUs/welcomeImg.jpg" style="width: 500px; height: 375px;">
+					<img src="GainzRUs/welcomeImg.jpg" class="mx-auto" style="width: auto; height: 30rem;">
 				</div>
 
+
 				<!-- 2nd column with project info -->
-				<div class="col-4">
+				<div class="col-md-4 mt-2 mb-2">
 					<h6>Role</h6>
 					<p>Front-end developer</p>
 
@@ -69,27 +71,43 @@
 			</div>
 		</div>
 
-		<img class="gainzrusImgs" style="margin-top: 40%; margin-left: 15%;" src="GainzRUs/mainActivity.jpg"
-			alt="Main Activity">
+		<div class="row">
+			<div class="col-md-12 justify-content-center d-flex">
+				<small class="me-5" id="scrollText" style="position: absolute; bottom: 0; color: black;">Scroll</small>
+				<i class="bi bi-arrow-down-short ms-5" style="position: absolute; bottom: 0; color: black;"></i>
+			</div>
+		</div>
 
-		<img class="gainzrusImgs" style="margin-top: 40%; right: 15%;" src="GainzRUs/profilePage.jpg"
-			alt="Profile Activity">
+	</section>
 
-		<small id="scrollText" style="color: black;">Scroll</small>
-		<i class="bi bi-arrow-down-short" style="color: black;"></i>
+	<!-- home and profile pages -->
+	<section class="activitySection">
+		<div class="col-md-4">
+			<img class="gainzrusImgs ms-5" src="GainzRUs/mainActivity.jpg" alt="Main Activity">
+		</div>
 
-		<p id="middleTextBubbleGRU" style="padding: 10px; text-align: center;">
-			Using both Java and XML in the Android studio IDE the Gainz R Us app is
-			brought to life. Java and XML togerther allow the mesh between creativity and engagement.
-			Our app was made to be straight-forward and intuitive, with no distractions, you can
-			get right to work.
-		</p>
+		<!-- center column -->
+		<div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
 
+			<!-- paragraph text -->
+			<p class="text-center" id="middleTextBubbleGRU" style="padding: 10px;">
+				Using both Java and XML in the Android studio IDE, the Gainz R Us app is brought to life.
+				Java and XML together allow the mesh between creativity and engagement.
+				Our app was made to be straightforward and intuitive, with no distractions, you can
+				get right to work.
+			</p>
+		</div>
+
+		<!-- right image column -->
+		<div class="col-md-4">
+			<img class="gainzrusImgs ms-5" src="GainzRUs/profilePage.jpg" alt="Profile Activity">
+		</div>
 	</section>
 
 	<!-- get workout ideas for user -->
 	<section class="activitySection">
-		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">No workouts in mind?</h3>
+		<h3 style="text-align: center;">No workouts in mind?</h3>
+		<div class="highlightedGRU"></div>
 
 		<img class="gainzrusImgs" src="GainzRUs/workoutPlan.jpg" style="margin-top: 7%; left: 25%;">
 		<img class="gainzrusImgs" src="GainzRUs/randomWorkout.jpg" style="margin-top: 7%; left: 2%;">
@@ -102,7 +120,8 @@
 
 	<!-- add workouts and view past workouts -->
 	<section class="activitySection">
-		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Log and view workout history</h3>
+		<h3 style="text-align: center;">Log and view workout history</h3>
+		<div class="highlightedGRU"></div>
 
 		<img class="gainzrusImgs" src="GainzRUs/addExerciseActivity.jpg" style="margin-top: 7%; right: 25%;">
 		<img class="gainzrusImgs" src="GainzRUs/workoutHistoryActivity.jpg" style="margin-top: 7%; right: 2%;">
@@ -115,7 +134,8 @@
 
 	<!-- user's personal records stats -->
 	<section class="activitySection">
-		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Shatter records</h3>
+		<h3 style="text-align: center;">Shatter records</h3>
+		<div class="highlightedGRU"></div>
 
 		<img class="gainzrusImgs" src="GainzRUs/statsActivity.jpg" style="margin-top: 7%; left: 15%;">
 
@@ -127,7 +147,8 @@
 
 	<!-- user's settings option, clear data -->
 	<section class="activitySection">
-		<h3 class="highlightedGRU" style="padding-top: 25px; text-align: center;">Embark on a new journey</h3>
+		<h3 style="text-align: center;">Embark on a new journey</h3>
+		<div class="highlightedGRU"></div>
 
 		<img class="gainzrusImgs" src="GainzRUs/settingsActivity.jpg" style="margin-top: 10%; right: 15%;">
 
