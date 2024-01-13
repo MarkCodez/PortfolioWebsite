@@ -215,7 +215,7 @@
   background-color: #ffca68;
   border-radius: 10px;
   display: inline;
-  padding: 3px;
+  padding: 0 3px 3px 3px;
 }
 
 .timeline {
