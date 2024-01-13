@@ -17,22 +17,28 @@
 <body style="background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%); overflow-x: hidden;">
 
 	<!-- navbar with name and buttons for different pages -->
-	<nav id="headerFixedNavbar" class="navbar bg-light px-3 fixed-top">
+	<nav id="headerFixedNavbar" class="navbar navbar-expand-lg bg-light px-3 fixed-top">
 		<h2 style="color: var(--bs-primary);">Mark Eskander</h2>
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-				<a class="nav-link" href="#homeContent">Home</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#timelineContent">Timeline</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#projectContent">Projects</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#skillsContent">Skills</a>
-			</li>
-		</ul>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="nav nav-pills ms-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#homeContent">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#timelineContent">Timeline</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projectContent">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skillsContent">Skills</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
 	<!-- active navbar using scrollspy bootstrap. page content inside here -->
@@ -43,7 +49,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-6 justify-content-center d-flex">
+					<div class="col-md-6 justify-content-center d-flex">
 						<img id="introImage" src="Home/profilePicture.jpg" alt="Profile Picture">
 
 						<div class="contactLinks">
@@ -52,13 +58,13 @@
 								rel="noopener noreferrer" title="LinkedIn">
 								<i class="bi bi-linkedin"></i>
 							</a>
-							
+
 							<i class="bi bi-envelope-fill">
 								<span class="tooltiptext tooltip">MarkEskander745@gmail.com</span>
 							</i>
 
 							<i class="bi bi-telephone-fill">
-								<span class="tooltiptext tooltip">(615)-938-6556</span>
+								<p class="tooltiptext tooltip">(615)-938-6556</p>
 							</i>
 
 							<a href="https://github.com/MarkCodez" target="_blank" rel="noopener noreferrer"
@@ -72,7 +78,7 @@
 						</div>
 					</div>
 
-					<div class="col-6 d-flex align-items-center justify-content-center">
+					<div class="col-md-6 d-flex align-items-center justify-content-center">
 						<p id="introContextText">
 							Welcome to my website! I'm Mark, and I'm thrilled you're here. This platform serves as an
 							introduction to who I am and what I bring to the table. Currently a senior in Computer
@@ -83,10 +89,14 @@
 						</p>
 					</div>
 				</div>
-			</div>
 
-			<small id="scrollText">Scroll</small>
-			<i class="bi bi-arrow-down-short"></i>
+				<div class="row">
+					<div class="col-md-12 justify-content-center d-flex">
+						<small class="me-5" id="scrollText" style="position: absolute; bottom: 0;">Scroll</small>
+						<i class="bi bi-arrow-down-short ms-5" style="position: absolute; bottom: 0;"></i>
+					</div>
+				</div>
+			</div>
 
 		</section>
 
@@ -200,12 +210,12 @@
 			<h2 style="color: var(--bs-primary);">Projects</h2>
 
 			<!-- to hold card layout (2x2 for now) -->
-			<div class="container" style="padding: 28px;">
+			<div class="container">
 
 				<div class="row">
 					<div class="col-md-6">
 						<div class="flip-card shaking">
-							<div class="card flip-card-inner">
+							<div class="card flip-card-inner mt-3">
 								<!-- Front side -->
 								<div class="card-body flip-card-front">
 									<!-- Card content -->
@@ -225,7 +235,7 @@
 
 					<div class="col-md-6">
 						<div class="flip-card shaking">
-							<div class="card flip-card-inner">
+							<div class="card flip-card-inner mt-3">
 								<!-- Front side -->
 								<div class="card-body flip-card-front">
 									<!-- Card content -->
@@ -246,10 +256,10 @@
 				</div>
 
 				<!-- second row of cards -->
-				<div class="row" style="padding-top: 28px;">
+				<div class="row mt-3">
 					<div class="col-md-6">
 						<div class="flip-card shaking">
-							<div class="card flip-card-inner">
+							<div class="card flip-card-inner mt-3">
 								<!-- Front side -->
 								<div class="card-body flip-card-front">
 									<!-- Card content -->
@@ -270,7 +280,7 @@
 
 					<div class="col-md-6">
 						<div class="flip-card shaking">
-							<div class="card flip-card-inner">
+							<div class="card flip-card-inner mt-3">
 								<!-- Front side -->
 								<div class="card-body flip-card-front">
 									<!-- Card content -->
@@ -301,7 +311,7 @@
 			<div class="row">
 
 				<!-- first column - Languages -->
-				<div class="col-4">
+				<div class="col-md-4">
 					<h3>Languages</h3>
 
 					<ul class="firstCol accordionL1">
@@ -373,7 +383,7 @@
 				</div>
 
 				<!-- second column - Tech tools -->
-				<div class="col-4">
+				<div class="col-md-4">
 					<h3>Tech tools</h3>
 
 					<ul class="secondCol accordionL2">
@@ -381,12 +391,12 @@
 						<li>
 							<input type="radio" name="accordionL2" id="second1" checked>
 							<label for="second1">
-								<h4>Version control: GitHub</h4>
+								<h4>Version control: Git</h4>
 							</label>
 							<div class="content">
 								<p>
-									I was introduced to version control tools and GitHub when I began collaborating on
-									group projects. Using GitHub facilitated code sharing
+									I was introduced to version control tools and Git when I began collaborating on
+									group projects. Using Git/GitHub facilitated code sharing
 									and concurrent work on various project features. This priceless tool improved our
 									capabilities indivdually and as a team.
 								</p>
@@ -443,7 +453,7 @@
 				</div>
 
 				<!-- third column - Soft skills -->
-				<div class="col-4">
+				<div class="col-md-4">
 					<h3>Interpersonal skills</h3>
 
 					<ul class="thirdCol accordionL3">
